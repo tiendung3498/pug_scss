@@ -1,0 +1,42 @@
+
+.map {
+    margin-top: 50px;
+
+    &__title {
+        #{$width}: 100%;
+        text-align: center;
+
+        h1 {
+            margin: 0;
+
+            font: {
+                family: $font__family--title;
+                size: 30px;
+                weight: 400;
+            }
+
+            letter-spacing: 2px;
+            color: #29220A;
+        }
+    }
+
+    &__banner {
+        position: relative;
+        #{$width}: 80%;
+        height: 425px;
+        margin-left: auto;
+        margin-right: auto;
+        background: url(../img/apples-1.jpg) no-repeat center;
+        background-size: 150%;
+
+
+        img {
+            position: absolute;
+            z-index: 0;
+            top: 57px;
+            right: 57px;
+            height: 268px;
+        }
+    }
+
+}

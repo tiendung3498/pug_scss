@@ -1,0 +1,38 @@
+footer {
+    background: #3c322b url(../img/fruitseamless1-1.web) center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    color: $white_color;
+
+    h4 {
+        color: $white_color;
+        font-family: $font__family--title;
+        margin-top: 30px;
+    }
+
+    ul {
+        list-style: none;
+
+    }
+
+    li a {
+        color: #8b8582;
+        text-decoration: none;
+
+        &:hover {
+            color: $green_color;
+        }
+    }
+
+    & .footer__div {
+        #{$width}: 300px;
+        text-align: left;
+
+        p {
+            color: #8b8582;
+            font-size: 14px;
+        }
+    }
+
+}

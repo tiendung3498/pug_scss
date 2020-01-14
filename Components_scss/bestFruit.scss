@@ -1,0 +1,70 @@
+.sectionBestFruit {
+    max-#{$width}: 1200px;
+    margin: $margin_auto_leftRight;
+
+    &__wrap {
+        display: flex;
+        padding: 50px 0px;
+        position: relative;
+
+        &--imgPerson {
+            padding: 0 5px;
+            height: 150px;
+        }
+
+        &--text {
+            font: {
+                family: $font__family--title;
+                size: 20px;
+            }
+
+            #{$width}: 35%;
+            margin-left: 50px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--textTitle p {
+            margin-bottom: -10px;
+        }
+
+        &--textContent p {
+            font: {
+                family: 'Neuton';
+                size: 17px;
+            }
+
+            color: #848484;
+            margin-top: 8px;
+
+        }
+
+        &--imgProduct {
+            right: 60px;
+            top: -100px;
+            position: absolute;
+            z-index: 0;
+        }
+
+        &--person {
+            margin-bottom: 0;
+
+            span {
+                font: {
+                    family: Sacramento, cursive;
+                    size: 30px;
+                }
+
+                color: $green_color;
+            }
+        }
+
+        &--imgProduct {
+            right: 60px;
+            top: -100px;
+            position: absolute;
+            z-index: 0;
+        }
+
+    }
+}

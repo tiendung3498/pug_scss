@@ -1,0 +1,512 @@
+@import url("https://fonts.googleapis.com/css?family=Neuton|Sacramento|Trade+Winds&display=swap");
+header {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffff;
+  z-index: 1; }
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+  nav .logo {
+    margin-left: 20px; }
+    nav .logo img {
+      padding-top: 12px;
+      padding-bottom: 14px; }
+  nav .toggleArea {
+    padding: 10px;
+    justify-content: flex-end;
+    display: none; }
+    nav .toggleArea label {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column; }
+      nav .toggleArea label span {
+        background-color: black;
+        height: 3px;
+        width: 70%;
+        margin: 2px 0px; }
+  nav #toggle {
+    display: none; }
+
+.menu {
+  width: 60%;
+  float: right; }
+  .menu .list__menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .menu .list__menu--item {
+      text-decoration: none;
+      line-height: 72px; }
+    .menu .list__menu--link,
+    .menu .list__menu .home {
+      padding: 26px 11px;
+      margin: 0;
+      text-decoration: none;
+      color: #878376; }
+    .menu .list__menu .home {
+      color: #6eaa00; }
+    .menu .list__menu--link:hover {
+      background-color: #6eaa00;
+      color: #ffff; }
+    .menu .list__menu .home:hover {
+      background-color: #6eaa00;
+      color: #ffff; }
+
+.containerBanner {
+  width: 100%;
+  height: 120vh;
+  overflow: hidden; }
+
+.banner {
+  width: 100%;
+  height: 100%;
+  background: url(../img/banner.jpg) no-repeat center;
+  background-size: cover;
+  animation: zoom 7s;
+  animation-delay: 0.5s; }
+
+@keyframes zoom {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.05); } }
+
+.banner__text {
+  position: absolute;
+  z-index: 0;
+  top: 30%;
+  left: 8%;
+  color: #ffff;
+  width: 45%; }
+  .banner__text--title {
+    margin: 0;
+    color: #ffff;
+    font-family: "Trade Winds", cursive;
+    font-style: italic;
+    font-size: 50px !important; }
+  .banner__text--span {
+    font-family: "Trade Winds", cursive;
+    font-weight: bold; }
+  .banner__text--content {
+    font-family: 'Neuton', serif;
+    font-size: 20px;
+    margin: 30px 0px 60px; }
+  .banner__text--button, .fruitClub__content a {
+    padding: 1rem 3rem;
+    font-size: 18px;
+    border-radius: 30px;
+    color: #ffff;
+    background-color: #6eaa00;
+    text-decoration: none;
+    font-family: 'Neuton';
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: inline-block; }
+  .banner__text .banner__button:hover {
+    background-color: #9ACD32;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2); }
+
+.sectionBestFruit {
+  max-width: 1200px;
+  margin: 0 auto; }
+  .sectionBestFruit__wrap {
+    display: flex;
+    padding: 50px 0px;
+    position: relative; }
+    .sectionBestFruit__wrap--imgPerson {
+      padding: 0 5px;
+      height: 150px; }
+    .sectionBestFruit__wrap--text {
+      font-family: "Trade Winds", cursive;
+      font-size: 20px;
+      width: 35%;
+      margin-left: 50px;
+      display: flex;
+      flex-direction: column; }
+    .sectionBestFruit__wrap--textTitle p {
+      margin-bottom: -10px; }
+    .sectionBestFruit__wrap--textContent p {
+      font-family: 'Neuton';
+      font-size: 17px;
+      color: #848484;
+      margin-top: 8px; }
+    .sectionBestFruit__wrap--imgProduct {
+      right: 60px;
+      top: -100px;
+      position: absolute;
+      z-index: 0; }
+    .sectionBestFruit__wrap--person {
+      margin-bottom: 0; }
+      .sectionBestFruit__wrap--person span {
+        font-family: Sacramento, cursive;
+        font-size: 30px;
+        color: #6eaa00; }
+    .sectionBestFruit__wrap--imgProduct {
+      right: 60px;
+      top: -100px;
+      position: absolute;
+      z-index: 0; }
+
+.sectionSale {
+  width: 100%;
+  margin: 0 auto;
+  margin: 50px 0px; }
+  .sectionSale__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 450px;
+    width: 80%;
+    margin: 0 auto; }
+    .sectionSale__container--product {
+      display: inline-block;
+      background-size: cover;
+      background-position: center;
+      border-radius: 35px;
+      margin: 17px;
+      text-align: center; }
+      .sectionSale__container--product h1 {
+        font-family: "Trade Winds", cursive;
+        left: 30px;
+        top: 90px;
+        color: #ffff;
+        text-align: center;
+        margin-top: 20px; }
+      .sectionSale__container--product h4 {
+        font-family: Neuton, serif;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 80px;
+        color: #ffff;
+        letter-spacing: 0.2px; }
+      .sectionSale__container--product p {
+        color: #ffff;
+        font-size: 19px;
+        text-align: center; }
+      .sectionSale__container--product a {
+        text-decoration: none;
+        text-align: center;
+        border-radius: 30px;
+        border: 2px solid #ffff;
+        padding: 18px 44px;
+        color: #ffff;
+        display: inline-block;
+        margin-top: 70px; }
+      .sectionSale__container--product a:hover {
+        background-color: #6eaa00;
+        border: none; }
+
+.fruitClub {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/banner2.jpg) center;
+  background-size: cover;
+  margin-top: 100px; }
+  .fruitClub__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center; }
+    .fruitClub__content h1 {
+      font-family: "Trade Winds", cursive;
+      font-size: 60px;
+      text-align: center;
+      color: #ffff;
+      letter-spacing: 4px;
+      margin-bottom: 0; }
+    .fruitClub__content p {
+      text-align: center;
+      color: #ffff;
+      font-size: 20px;
+      margin-bottom: 80px; }
+    .fruitClub__content a:hover {
+      background-color: #876b5d;
+      box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2); }
+
+.product {
+  margin-top: 70px; }
+  .product__title {
+    width: 100%;
+    text-align: center; }
+    .product__title h1 {
+      margin: 0;
+      font-family: "Trade Winds", cursive;
+      font-size: 30px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      color: #29220A; }
+  .product__container {
+    width: 74%;
+    margin: 0 auto;
+    display: flex; }
+    .product__container--content {
+      width: 100%;
+      text-align: center;
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      margin: 5px auto; }
+    .product__container--product {
+      width: 100%;
+      background-size: cover; }
+      .product__container--product--image {
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden; }
+        .product__container--product--image img {
+          width: 100%;
+          padding: 2px;
+          transition: 0.5s; }
+      .product__container--product--title {
+        width: 100%;
+        padding: 2px;
+        transition: 0.5s; }
+      .product__container--product h2 {
+        font-family: "Trade Winds", cursive;
+        text-align: center;
+        margin-top: 42px; }
+    .product__container--product:hover {
+      color: #6eaa00; }
+      .product__container--product:hover img {
+        transform: scale(1.1); }
+
+.map {
+  margin-top: 50px; }
+  .map__title {
+    width: 100%;
+    text-align: center; }
+    .map__title h1 {
+      margin: 0;
+      font-family: "Trade Winds", cursive;
+      font-size: 30px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      color: #29220A; }
+  .map__banner {
+    position: relative;
+    width: 80%;
+    height: 425px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../img/apples-1.jpg) no-repeat center;
+    background-size: 150%; }
+    .map__banner img {
+      position: absolute;
+      z-index: 0;
+      top: 57px;
+      right: 57px;
+      height: 268px; }
+
+footer {
+  background: #3c322b url(../img/fruitseamless1-1.web) center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  color: #ffff; }
+  footer h4 {
+    color: #ffff;
+    font-family: "Trade Winds", cursive;
+    margin-top: 30px; }
+  footer ul {
+    list-style: none; }
+  footer li a {
+    color: #8b8582;
+    text-decoration: none; }
+    footer li a:hover {
+      color: #6eaa00; }
+  footer .footer__div {
+    width: 300px;
+    text-align: left; }
+    footer .footer__div p {
+      color: #8b8582;
+      font-size: 14px; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+@media (max-width: 1057px) {
+  .banner__text--title {
+    font-size: 40px; }
+  .sectionBestFruit {
+    max-width: 900px; }
+  .sectionBestFruit__wrap {
+    width: 100%;
+    padding: 30px 0px; }
+    .sectionBestFruit__wrap--imgproduct {
+      width: 300px;
+      height: 200px;
+      top: -60px; }
+  .sectionSale {
+    width: 100%; }
+    .sectionSale__container {
+      grid-template-rows: 400px;
+      width: 90%; }
+      .sectionSale__container--product h1 {
+        font-size: 20px; }
+      .sectionSale__container--product a {
+        margin-top: 40px; }
+  .product__container {
+    width: 84%; }
+    .product__container--product p {
+      font-size: 14px; }
+    .product__container--product h2 {
+      font-size: 16px; }
+  .map__banner {
+    width: 100%; }
+  .menu {
+    width: 70%; }
+  .list__menu {
+    font-size: 11px; } }
+
+footer ul {
+  margin: 0px; }
+
+@media (max-width: 800px) {
+  nav .logo {
+    width: 150px; }
+    nav .logo img {
+      max-width: 100%;
+      padding-top: 18px; }
+  .list__menu {
+    font-size: 9px; }
+    .list__menu--item a {
+      padding: 26px 11px; }
+  .sectionBestFruit__wrap--text {
+    font-size: 15px;
+    width: 42%; }
+    .sectionBestFruit__wrap--text p {
+      font-size: 16px; }
+  .sectionBestFruit__wrap--imgPerson {
+    width: 100px;
+    height: 100px; }
+  .sectionBestFruit__wrap--imgProduct {
+    width: 200px;
+    height: 150px;
+    top: -30px; }
+  .banner__text {
+    width: 80%;
+    text-align: center; }
+    .banner__text h1 {
+      font-size: 30px; }
+    .banner__text h2 {
+      margin: 30px 0px; }
+  .sectionSale {
+    width: 95%;
+    margin: 0 auto; }
+    .sectionSale__container--product {
+      grid-template-rows: 350px; }
+      .sectionSale__container--product h2 {
+        font-size: 14px; }
+      .sectionSale__container--product p {
+        font-size: 13px; }
+      .sectionSale__container--product a {
+        margin-top: 30px;
+        padding: 10px 10px; }
+  .fruitClub h1 {
+    font-size: 40px; }
+  .map__banner {
+    width: 100%; }
+  .product__container--product--title {
+    font-size: 14px; }
+  .product__container--product p {
+    font-size: 13px; }
+  .map__banner img {
+    width: 400px;
+    height: 200px;
+    right: 20px; }
+  .footer h4 {
+    font-size: 14px; }
+  .footer li a {
+    font-size: 10px; } }
+
+footer ul h4 {
+  font-size: 14px; }
+
+footer ul li a {
+  font-size: 12px; }
+
+@media (min-width: 501px) and (max-width: 560px) {
+  .list__menu {
+    font-size: 7px; } }
+
+@media (max-width: 500px) {
+  nav .toggleArea {
+    display: block; }
+  nav .menu {
+    position: fixed;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.5s; }
+  .banner__text h1 {
+    font-size: 29px; }
+  #toggle:checked ~ .menu {
+    height: 400px;
+    background-color: white; }
+  .list__menu {
+    flex-direction: column; }
+    .list__menu li {
+      text-align: center;
+      line-height: 50px; }
+      .list__menu li a {
+        font-size: 20px; }
+  .sectionBestFruit__wrap {
+    flex-direction: column;
+    padding: 80px 0px; }
+    .sectionBestFruit__wrap--text {
+      width: 65%;
+      margin: auto;
+      font-size: 20px; }
+      .sectionBestFruit__wrap--text p {
+        font-size: 17px; }
+    .sectionBestFruit__wrap--imgPerson {
+      width: 170px;
+      height: 150px;
+      margin: auto; }
+    .sectionBestFruit__wrap--imgProduct {
+      width: 200px;
+      height: 150px;
+      top: -30px;
+      right: 0px; }
+  .sectionSale {
+    height: 1200px; }
+    .sectionSale__container {
+      grid-template-columns: 100%;
+      grid-template-rows: 400px 400px 400px;
+      width: 100%; }
+      .sectionSale__container--product {
+        background-size: cover;
+        margin: 10px 0px; }
+        .sectionSale__container--product a {
+          margin-top: 30px;
+          padding: 10px 20px; }
+  .fruitClub h1 {
+    font-size: 20px; }
+  .fruitClub__content p {
+    font-size: 15px; }
+  .product__container {
+    width: 84%; }
+    .product__container--content {
+      grid-template-columns: 100%;
+      grid-template-rows: 440px 440px 440px; }
+  .map__banner img {
+    width: 300px;
+    height: 170px; }
+  footer {
+    display: grid;
+    grid-template-rows: 150px 150px 150px 176px;
+    grid-template-columns: 100%; } }

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Neuton|Sacramento|Trade+Winds&display=swap');
+@import "variable.scss";
+@import "mixin.scss";
+@import "./Components_scss/header.scss";
+@import "./Components_scss/banner.scss";
+@import "./Components_scss/bestFruit.scss";
+@import "./Components_scss/sale.scss";
+@import "./Components_scss/fruitClub.scss";
+@import "./Components_scss/product.scss";
+@import "./Components_scss/map.scss";
+@import "./Components_scss/footer.scss";
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@import "responsive.scss"
