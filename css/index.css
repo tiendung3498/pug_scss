@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Neuton|Sacramento|Trade+Winds&display=swap");
+@import url(./font.css);
 header {
   position: fixed;
   width: 100%;
@@ -91,14 +91,14 @@ nav {
   .banner__text--title {
     margin: 0;
     color: #ffff;
-    font-family: "Trade Winds", cursive;
+    font-family: Trade;
     font-style: italic;
     font-size: 50px; }
   .banner__text--span {
-    font-family: "Trade Winds", cursive;
+    font-family: Trade;
     font-weight: bold; }
   .banner__text--content {
-    font-family: 'Neuton', serif;
+    font-family: Neuton;
     font-size: 20px;
     margin: 30px 0px 60px; }
   .banner__text--button, .fruitClub__content a {
@@ -127,7 +127,7 @@ nav {
       padding: 0 5px;
       height: 150px; }
     .sectionBestFruit__wrap--text {
-      font-family: "Trade Winds", cursive;
+      font-family: Trade;
       font-size: 20px;
       width: 35%;
       margin-left: 50px;
@@ -148,7 +148,7 @@ nav {
     .sectionBestFruit__wrap--person {
       margin-bottom: 0; }
       .sectionBestFruit__wrap--person span {
-        font-family: 'Sacramento', cursive;
+        font-family: Sacramento;
         font-size: 30px;
         color: #6eaa00; }
     .sectionBestFruit__wrap--imgProduct {
@@ -175,7 +175,7 @@ nav {
       margin: 17px;
       text-align: center; }
       .sectionSale__container--product h1 {
-        font-family: "Trade Winds", cursive;
+        font-family: Trade;
         left: 30px;
         top: 90px;
         color: #ffff;
@@ -220,7 +220,7 @@ nav {
     width: 80%;
     text-align: center; }
     .fruitClub__content h1 {
-      font-family: "Trade Winds", cursive;
+      font-family: Trade;
       font-size: 60px;
       text-align: center;
       color: #ffff;
@@ -242,7 +242,7 @@ nav {
     text-align: center; }
     .product__title h1 {
       margin: 0;
-      font-family: "Trade Winds", cursive;
+      font-family: Trade;
       font-size: 30px;
       font-weight: 400;
       letter-spacing: 2px;
@@ -272,7 +272,7 @@ nav {
         padding: 2px;
         transition: 0.5s; }
       .product__container--product h2 {
-        font-family: "Trade Winds", cursive;
+        font-family: Trade;
         text-align: center;
         margin-top: 42px; }
     .product__container--product:hover {
@@ -287,7 +287,7 @@ nav {
     text-align: center; }
     .map__title h1 {
       margin: 0;
-      font-family: "Trade Winds", cursive;
+      font-family: Trade;
       font-size: 30px;
       font-weight: 400;
       letter-spacing: 2px;
@@ -315,7 +315,7 @@ footer {
   color: #ffff; }
   footer h4 {
     color: #ffff;
-    font-family: "Trade Winds", cursive;
+    font-family: Trade;
     margin-top: 30px; }
   footer ul {
     list-style: none; }

@@ -4,10 +4,10 @@
 }
 
 @font-face {
-    font-family: 'Sacramento', cursive;
+    font-family: Sacramento;
     src: url(../fonts/Sacramento/Sacramento-Regular.ttf);
 }
-@font-face {
-    font-family: 'Trade Winds', cursive;
-    src: url(../fonts/Trade_Winds/TradeWinds-Regular.ttf);
+@font-face{
+  font-family: Trade;
+  src:url("../fonts/Trade_Winds (1)/TradeWinds-Regular.ttf");
 }
