@@ -93,7 +93,7 @@ nav {
     color: #ffff;
     font-family: "Trade Winds", cursive;
     font-style: italic;
-    font-size: 50px !important; }
+    font-size: 50px; }
   .banner__text--span {
     font-family: "Trade Winds", cursive;
     font-weight: bold; }
@@ -148,7 +148,7 @@ nav {
     .sectionBestFruit__wrap--person {
       margin-bottom: 0; }
       .sectionBestFruit__wrap--person span {
-        font-family: Sacramento, cursive;
+        font-family: 'Sacramento', cursive;
         font-size: 30px;
         color: #6eaa00; }
     .sectionBestFruit__wrap--imgProduct {
@@ -162,12 +162,12 @@ nav {
   margin: 0 auto;
   margin: 50px 0px; }
   .sectionSale__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 450px;
+    display: flex;
+    height: 450px;
     width: 80%;
     margin: 0 auto; }
     .sectionSale__container--product {
+      width: 33%;
       display: inline-block;
       background-size: cover;
       background-position: center;
@@ -254,8 +254,7 @@ nav {
     .product__container--content {
       width: 100%;
       text-align: center;
-      display: grid;
-      grid-template-columns: 33% 33% 33%;
+      display: flex;
       margin: 5px auto; }
     .product__container--product {
       width: 100%;

@@ -1,5 +1,7 @@
+
+
 .containerBanner {
-    #{$width}: 100%;
+    width: 100%;
     height: 120vh;
     overflow: hidden;
 
@@ -28,7 +30,7 @@
     top: 30%;
     left: 8%;
     color: $white_color;
-    #{$width}: 45%;
+    width: 45%;
 
     &--title {
         margin: 0;
@@ -37,7 +39,7 @@
         font: {
             family: $font__family--title;
             style: italic;
-            size: 50px !important;
+            size: 50px ;
         }
 
     }
